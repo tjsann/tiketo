@@ -41,6 +41,7 @@ var mei_kana = array_mei_kana[mei_pic];
 var tel = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random()*90000000)+10000000);
 
 //メアド生成
+/**
 var mon = (Math.floor(Math.random()*12)+1);
 var day = (Math.floor(Math.random()*28)+1);
 var address_name = array_sei_r[sei_pic] + array_mei_r[mei_pic] + mon + day + domains[Math.floor(Math.random()*domains.length)];
@@ -56,6 +57,7 @@ if(mailtype == 0){
 }else{
   mail = address_rand;
 }
+**/
 
 //住所生成
 var post_pic = Math.floor(Math.random()*array_post.length);
@@ -97,7 +99,7 @@ document.getElementsByName(mei_name)[0].value = mei;
 document.getElementsByName(sei_kana_name)[0].value = sei_kana;
 document.getElementsByName(mei_kana_name)[0].value = mei_kana;
 document.getElementsByName(tel_name)[0].value = tel;
-//document.getElementsByName(mail_name)[0].value = mail;
+document.getElementsByName(mail_name)[0].value = mail;
 document.getElementsByName(mail_conf_name)[0].value = mail;
 
 var shoprand = Math.floor(Math.random()*2);
