@@ -108,4 +108,4 @@ if(shoprand == 0){
 }
 document.getElementById("i8").checked = true;
 
-getToken('GB1151_GOTONEXT','https://w2.red.onlineticket.jp/tkt101/main.jsp');
+//getToken('GB1151_GOTONEXT','https://w2.red.onlineticket.jp/tkt101/main.jsp');
