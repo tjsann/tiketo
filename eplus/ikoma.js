@@ -97,8 +97,8 @@ document.getElementsByName(mei_name)[0].value = mei;
 document.getElementsByName(sei_kana_name)[0].value = sei_kana;
 document.getElementsByName(mei_kana_name)[0].value = mei_kana;
 document.getElementsByName(tel_name)[0].value = tel;
-document.getElementsByName(mail_name)[0].value = mail;
-document.getElementsByName(mail_conf_name)[0].value = mail;
+//document.getElementsByName(mail_name)[0].value = mail;
+//document.getElementsByName(mail_conf_name)[0].value = mail;
 
 var shoprand = Math.floor(Math.random()*2);
 if(shoprand == 0){
