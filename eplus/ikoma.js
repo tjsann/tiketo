@@ -43,7 +43,7 @@ var tel = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random(
 //メアド生成
 var mon = (Math.floor(Math.random()*12)+1);
 var day = (Math.floor(Math.random()*28)+1);
-var address_name = array_sei_r[sei_pic] + array_mei_r[mei_pic] + mon + day + domains[Math.floor(Math.random()*domains.length)];
+var address_name = array_sei_r[sei_pic] + array_mei_r[mei_pic] + mon + day +tel + domains[Math.floor(Math.random()*domains.length)];
 
 var chars = 'abcdefghijklmnopqrstuvwxyz';
 var str = Math.random().toString(36).slice(-1*(Math.floor(Math.random()*6)+5));
