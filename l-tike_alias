@@ -6,11 +6,6 @@ var domains = ['@gmail.com'];
 //使用アドレス名
 var address_name = "myun12101"
 
-//メアド生成
-var sei = array_sei[Math.floor(Math.random()*array_sei.length)];
-var mei = array_mei[Math.floor(Math.random()*array_mei.length)];
-var mon = (Math.floor(Math.random()*12)+1);
-var day = (Math.floor(Math.random()*28)+1);
 var domain = domains[Math.floor(Math.random()*domains.length)];
 
 var ketasuu = Math.floor(Math.random()*6);
