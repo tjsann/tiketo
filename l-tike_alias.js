@@ -30,6 +30,8 @@ return ip;
 }
 
 getip();
+//IPセッション格納
+sessionStorage.setItem("ip", ip);
 
 //メアドセッション格納
 sessionStorage.setItem("mail", mail)
@@ -44,7 +46,5 @@ sessionStorage.setItem("tell", tell);
 //電話番号入力
 document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = tell;
 
-//IPセッション格納
-sessionStorage.setItem("ip", ip);
 //次ページへ
 document.querySelector("[name=NEXT]").click();
