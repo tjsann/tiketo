@@ -33,5 +33,17 @@ sessionStorage.setItem("tell", tell);
 //電話番号入力
 document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = tell;
 
+// IPアドレス取得
+async function getip(){
+const API_URL = 'https://api.ipify.org/?format=json';
+const res = await fetch(API_URL);
+const data = await res.json();
+ip = data.ip
+ip = JSON.stringify(ip);
+return ip;
+}
+getip();
+//IPセッション格納
+sessionStorage.setItem("ip", ip);
 //次ページへ
 document.querySelector("[name=NEXT]").click();
