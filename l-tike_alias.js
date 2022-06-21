@@ -25,7 +25,6 @@ const API_URL = 'https://api.ipify.org/?format=json';
 const res = await fetch(API_URL);
 const data = await res.json();
 ip = data.ip
-ip = JSON.stringify(ip);
 return ip;
 }
 
