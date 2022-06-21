@@ -43,14 +43,9 @@ ip = JSON.stringify(ip);
 return ip;
 }
 
-var sleep = 1000;
-setTimeout(function(){
- getip();
-},sleep); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
- 
+getip();
+
 //IPセッション格納
 sessionStorage.setItem("ip", ip);
 //次ページへ
-
-
 document.querySelector("[name=NEXT]").click();
