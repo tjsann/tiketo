@@ -42,13 +42,15 @@ ip = data.ip
 ip = JSON.stringify(ip);
 return ip;
 }
-getip();
+
+var sleep = 1000;
+setTimeout(function(){
+ getip();
+},sleep); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
+ 
 //IPセッション格納
 sessionStorage.setItem("ip", ip);
 //次ページへ
 
- var sleep = 1000;
-setTimeout(function(){
-document.querySelector("[name=NEXT]").click();
-},sleep); //iPhoneで応募の場合ファイル保存のポップアップによって次へ操作が無効化されるため2秒遅延
 
+document.querySelector("[name=NEXT]").click();
