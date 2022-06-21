@@ -19,6 +19,17 @@ if(mailtype == 0){
 }else{
   mail = address_rand;
 }
+// IPアドレス取得
+async function getip(){
+const API_URL = 'https://api.ipify.org/?format=json';
+const res = await fetch(API_URL);
+const data = await res.json();
+ip = data.ip
+ip = JSON.stringify(ip);
+return ip;
+}
+
+getip();
 
 //メアドセッション格納
 sessionStorage.setItem("mail", mail)
@@ -32,18 +43,6 @@ var tell = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random
 sessionStorage.setItem("tell", tell);
 //電話番号入力
 document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = tell;
-
-// IPアドレス取得
-async function getip(){
-const API_URL = 'https://api.ipify.org/?format=json';
-const res = await fetch(API_URL);
-const data = await res.json();
-ip = data.ip
-ip = JSON.stringify(ip);
-return ip;
-}
-
-getip();
 
 //IPセッション格納
 sessionStorage.setItem("ip", ip);
