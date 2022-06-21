@@ -50,6 +50,7 @@ var town = array_town[post_pic];
 var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
 //データ入力
+document.getElementById("PAYMENT_MTHD_SEL-03").checked = true;
 document.forms.ttg100.elements.PWD.value = document.forms.ttg100.elements.PWD_CNF.value = pass;
 document.forms.ttg100.elements.APLCT_FIRST_NAME.value = sei;
 document.forms.ttg100.elements.APLCT_LAST_NAME.value = mei;
