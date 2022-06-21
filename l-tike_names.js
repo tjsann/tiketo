@@ -55,6 +55,7 @@ sessionStorage.setItem('name_kana', sei_kana+mei_kana);
 sessionStorage.setItem('birth', birth_y + "/" + birth_m "/" + birth_d);
 sessionStorage.setItem('post', post + "\n" + pref + "\n" + city + town + hn);
 sessionStorage.setItem('pass', pass);
+sessionStorage.setItem('sex', "女");
 
 //データ入力
 document.getElementById("PAYMENT_MTHD_SEL-03").checked = true;
