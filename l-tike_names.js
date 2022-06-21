@@ -49,6 +49,13 @@ var city = array_city[post_pic];
 var town = array_town[post_pic];
 var hn = (Math.floor(Math.random()*4)+1)+ "-" + (Math.floor(Math.random()*500)+1);
 
+//セッション格納
+sessionStorage.setItem('name', sei+mei);
+sessionStorage.setItem('name_kana', sei_kana+mei_kana);
+sessionStorage.setItem('birth', birth_y + "/" + birth_m "/" + birth_d);
+sessionStorage.setItem('post', post + "\n" + pref + "\n" + city + town + hn);
+sessionStorage.setItem('pass', pass);
+
 //データ入力
 document.getElementById("PAYMENT_MTHD_SEL-03").checked = true;
 document.forms.ttg100.elements.PWD.value = document.forms.ttg100.elements.PWD_CNF.value = pass;
