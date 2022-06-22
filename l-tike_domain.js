@@ -36,6 +36,7 @@ ip = data.ip
 return ip;
 }
 
+//ip取得完了後入力等実施
 getip() => {
   //IPセッション格納
   sessionStorage.setItem("ip", ip);
