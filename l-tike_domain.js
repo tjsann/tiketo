@@ -37,7 +37,7 @@ return ip;
 }
 
 //ip取得完了後入力等実施
-getip() => {
+getip().then(() => {
   //IPセッション格納
   sessionStorage.setItem("ip", ip);
 
@@ -58,4 +58,4 @@ getip() => {
 
   //次ページへ
   document.querySelector("[name=NEXT]").click();
-};
+});
