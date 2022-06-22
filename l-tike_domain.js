@@ -38,24 +38,25 @@ return ip;
 
 getip();
 
+setTimeout(() => {
+  //IPセッション格納
+  sessionStorage.setItem("ip", ip);
 
-//IPセッション格納
-sessionStorage.setItem("ip", ip);
+  //メアドセッション格納
+  sessionStorage.setItem("mail", mail)
 
-//メアドセッション格納
-sessionStorage.setItem("mail", mail)
+  //メアド入力
+  document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = mail;
 
-//メアド入力
-document.forms.ttg160.elements.MAIL_ADDRS.value = document.forms.ttg160.elements.MAIL_ADDRS_CONFIRM.value = mail;
+  // 電話番号取得
+  var tell = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random()*90000000)+10000000);
 
-// 電話番号取得
-var tell = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random()*90000000)+10000000);
+  //電話番号セッション格納
+  sessionStorage.setItem("tell", tell);
 
-//電話番号セッション格納
-sessionStorage.setItem("tell", tell);
+  //電話番号入力
+  document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = tell;
 
-//電話番号入力
-document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = tell;
-
-//次ページへ
-document.querySelector("[name=NEXT]").click();
+  //次ページへ
+  document.querySelector("[name=NEXT]").click();
+}, 1000);
