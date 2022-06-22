@@ -38,6 +38,7 @@ return ip;
 
 getip();
 
+
 //IPセッション格納
 sessionStorage.setItem("ip", ip);
 
