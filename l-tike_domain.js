@@ -26,19 +26,6 @@ if(mailtype == 0){
 }else{
   mail = address_rand;
 }
-// IPアドレス取得
-// async function getip(){
-// const API_URL = 'https://api.ipify.org/?format=json';
-// const res = await fetch(API_URL);
-// const data = await res.json();
-// ip = data.ip
-// return ip;
-// }
-
-// getip();
-
-// //IPセッション格納
-// sessionStorage.setItem("ip", ip);
 
 //メアドセッション格納
 sessionStorage.setItem("mail", mail)
