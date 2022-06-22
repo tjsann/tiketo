@@ -29,8 +29,8 @@ if(mailtype == 0){
 // IPアドレス取得
 function getip(){
 const API_URL = 'https://api.ipify.org/?format=json';
-const res = await fetch(API_URL);
-const data = await res.json();
+const res = fetch(API_URL);
+const data = res.json();
 ip = data.ip
 return ip;
 }
