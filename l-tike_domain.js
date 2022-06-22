@@ -36,9 +36,7 @@ ip = data.ip
 return ip;
 }
 
-getip();
-
-setTimeout(() => {
+getip() => {
   //IPセッション格納
   sessionStorage.setItem("ip", ip);
 
@@ -59,4 +57,4 @@ setTimeout(() => {
 
   //次ページへ
   document.querySelector("[name=NEXT]").click();
-}, 1000);
+};
