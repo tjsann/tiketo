@@ -68,7 +68,11 @@ for (i = 1; i <= doukounum; i++) {
   var pref = "東京都";
 
   //セッション格納
-  sessionStorage.setItem('name', sei + mei);
+  sessionStorage.setItem("doukouName_" + i, sei + mei);
+  sessionStorage.setItem("doukouMail_" + i, mail);
+  sessionStorage.setItem("doukouTel_" + i, tel);
+  sessionStorage.setItem("doukouAddress_" + i, pref);
+  
 
   //データ入力
   document.getElementById("c_" + i + "_name_family").value = sei;
