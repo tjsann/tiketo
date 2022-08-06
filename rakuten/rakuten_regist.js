@@ -148,4 +148,4 @@ return ip;
  // PC用
  //document.getElementsByName("execMethod")[1].click();
  // スマホ用
- document.getElementsByName("execMethod").click();
+ document.getElementsByName("execMethod")[0].click();
