@@ -1,5 +1,5 @@
 
-//ローチケメアド電話番号自動入力[共用]
+//楽天登録用
 
 //使用ドメイン入力
 var domains = ['@gamuil.com'];
@@ -145,4 +145,7 @@ return ip;
   console.log(pass);
    
   //次ページへ
- document.getElementsByName("execMethod")[1].click();
+ // PC用
+ //document.getElementsByName("execMethod")[1].click();
+ // スマホ用
+ document.getElementsByName("execMethod").click();
