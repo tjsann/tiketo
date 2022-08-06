@@ -34,11 +34,12 @@ var mail_num = Math.random().toString(36).slice(-4);
 var address_name = sei_r + mei_r + mail_num + domain;
 
 var ketasuu = Math.floor(Math.random()*6);
-var address_rand = Math.random().toString(36).slice(-1*(ketasuu+5)) + domain;
+
 mail = address_name;
 
 //メアド形式選択(1:1)
 /*
+var address_rand = Math.random().toString(36).slice(-1*(ketasuu+5)) + domain;
 var mailtype = Math.floor(Math.random()*Math.floor(2));
 if(mailtype == 0){
   mail = address_name;
@@ -55,7 +56,7 @@ var birth_d = (Math.floor(Math.random()*28)+1);
 var day = (Math.floor(Math.random()*28)+1);
 
 //6桁パスワード生成
-var pass = pass = mei_r + birth_m + birth_d;;
+var pass = pass = mei_r + mail_num;;
 //パスワードは名前(アルファベット＋月＋日)
 
 //住所リスト(東京都)
