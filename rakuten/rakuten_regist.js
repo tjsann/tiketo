@@ -110,7 +110,7 @@ return ip;
   
   //名カナ入力
   document.forms.Regist1Form.elements.fname_kana.value = mei_kana;
-/*  
+
   //生年月日入力
   document.forms.Regist1Form.elements.by.value = birth_y;
 
@@ -142,8 +142,5 @@ return ip;
   //電話番号入力
   //document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = tell;
   
-  //確認よう
-  console.log(pass);
-*/
   //次ページへ
- document.getElementsByName("execMethod")[0].click();
+ document.getElementsByName("execMethod")[1].click();
