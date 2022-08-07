@@ -134,13 +134,21 @@ return ip;
   document.forms.Regist1Form.elements.street.value = town + hn;
  
   // 電話番号取得
-  //var tell = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random()*90000000)+10000000);
+  var tell1 = "0" + (Math.floor(Math.random()*3)+7) + "0";
+
+  var tell2 =  (Math.floor(Math.random()*9000)+1000);
+
+  var tell3 =  (Math.floor(Math.random()*9000)+1000);
 
   //電話番号セッション格納
   //sessionStorage.setItem("tell", tell);
 
   //電話番号入力
-  //document.forms.ttg160.elements.TEL.value = document.forms.ttg160.elements.TEL_CONFIRM.value = tell;
-  
+  document.forms.Regist1Form.elements["m_tel.valueAt[0]"].value = tell1;
+
+  document.forms.Regist1Form.elements["m_tel.valueAt[1]"].value = tell2;
+
+  document.forms.Regist1Form.elements["m_tel.valueAt[2]"].value = tell3;
+
   //次ページへ
- document.getElementsByName("execMethod")[1].click();
+  document.getElementsByName("execMethod")[1].click();
