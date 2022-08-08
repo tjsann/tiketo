@@ -144,6 +144,12 @@ return ip;
   //sessionStorage.setItem("tell", tell);
 
   //電話番号入力
+  document.forms.Regist1Form.elements["tel.valueAt[0]"].value = tell1;
+
+  document.forms.Regist1Form.elements["tel.valueAt[1]"].value = tell2;
+
+  document.forms.Regist1Form.elements["tel.valueAt[2]"].value = tell3;
+
   document.forms.Regist1Form.elements["m_tel.valueAt[0]"].value = tell1;
 
   document.forms.Regist1Form.elements["m_tel.valueAt[1]"].value = tell2;
