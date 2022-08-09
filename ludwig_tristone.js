@@ -1,7 +1,7 @@
 var form = document.createElement('form');
 document.body.appendChild(form);
 form.method = 'post';
-form.action = 'https://l-tike.com/st1/npim8zqcebnft58p4f8z';
+form.action = 'https://l-tike.com/st1/uunraiduhw10idp4wysh';
 
 var input1 = document.createElement('input');
 input1.type = 'hidden';
