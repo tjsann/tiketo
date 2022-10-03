@@ -5,6 +5,6 @@ form.action = 'https://l-tike.com/st1/4cycmqgfqmim718b01t6';
 var input = document.createElement('input');
 input.type = 'hidden';
 input.name = 'CERK';
-input.value = 'a5bb8b56c0ef60ba67883dc103a8a226';
+input.value = '19e6a10c1f51659fd9cddff6cda00ff2';
 form.appendChild(input);
 form.submit();
