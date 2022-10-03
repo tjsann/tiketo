@@ -1,7 +1,7 @@
 var form = document.createElement('form');
 document.body.appendChild(form);
 form.method = 'post';
-form.action = 'https://l-tike.com/st1/4cycmqgfqmim718b01t6';
+form.action = 'https://l-tike.com/st1/3mikseocy9stpu5smbxf';
 var input = document.createElement('input');
 input.type = 'hidden';
 input.name = 'CERK';
