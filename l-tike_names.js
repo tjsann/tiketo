@@ -73,7 +73,7 @@ document.forms.ttg100.elements.APLCT_PREF.value = pref;
 document.forms.ttg100.elements.APLCT_CITY.value = city + town;
 document.forms.ttg100.elements.APLCT_LNUM.value = hn;
 document.getElementById("q_1-確認了承しました").checked = true;
-//document.getElementById("q_2-確認了承しました").checked = true;
+document.getElementById("q_2-確認了承しました").checked = true;
 
 //次画面へ
 document.querySelector("[name=NEXT_BUTTON]").click();　
