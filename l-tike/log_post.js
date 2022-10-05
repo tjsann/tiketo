@@ -53,27 +53,15 @@ obj.postcode = postcode;
 obj.pass = pass;
 obj.ip = ip;
 
-function post(path, params, method='post') {
-
-  // The rest of this code assumes you are not using a library.
-  // It can be made less wordy if you use one.
-  const form = document.createElement('form');
-  form.method = method;
-  form.action = path;
-
-  for (const key in params) {
-    if (params.hasOwnProperty(key)) {
-      const hiddenField = document.createElement('input');
-      hiddenField.type = 'hidden';
-      hiddenField.name = key;
-      hiddenField.value = params[key];
-
-      form.appendChild(hiddenField);
-    }
-  }
-
-  document.body.appendChild(form);
-  form.submit();
+//データを送信
+xhr = new XMLHttpRequest;       //インスタンス作成
+xhr.onload = function(){        //レスポンスを受け取った時の処理（非同期）
+ var res = xhr.responseText;
+ if (res.length>0) alert(res);
+};
+xhr.onerror = function(){       //エラーが起きた時の処理（非同期）
+ alert("error!");
 }
-
-post("https://script.google.com/macros/s/AKfycbxIOTS0GCvEuhXn6DBo1KJxAVT-8oykQuVtY93n0aYhh1NhB8nA9p04F_dqgYbFmzKZ7A/exec", obj);
+xhr.open('post', "https://script.google.com/macros/s/AKfycbxIOTS0GCvEuhXn6DBo1KJxAVT-8oykQuVtY93n0aYhh1NhB8nA9p04F_dqgYbFmzKZ7A/exec", true);    //(1)
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.send(obj);    //送信実行
