@@ -54,4 +54,4 @@ obj.pass = pass;
 obj.ip = ip;
 
 //データを送信
-fetch(https://script.google.com/macros/s/AKfycbxIOTS0GCvEuhXn6DBo1KJxAVT-8oykQuVtY93n0aYhh1NhB8nA9p04F_dqgYbFmzKZ7A/exec, obj);
+fetch("https://script.google.com/macros/s/AKfycbxIOTS0GCvEuhXn6DBo1KJxAVT-8oykQuVtY93n0aYhh1NhB8nA9p04F_dqgYbFmzKZ7A/exec", obj);
