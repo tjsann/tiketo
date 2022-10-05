@@ -54,14 +54,4 @@ obj.pass = pass;
 obj.ip = ip;
 
 //データを送信
-xhr = new XMLHttpRequest;       //インスタンス作成
-xhr.onload = function(){        //レスポンスを受け取った時の処理（非同期）
- var res = xhr.responseText;
- if (res.length>0) alert(res);
-};
-xhr.onerror = function(){       //エラーが起きた時の処理（非同期）
- alert("error!");
-}
-xhr.open('post', "https://script.google.com/macros/s/AKfycbxIOTS0GCvEuhXn6DBo1KJxAVT-8oykQuVtY93n0aYhh1NhB8nA9p04F_dqgYbFmzKZ7A/exec", true);    //(1)
-xhr.setRequestHeader('Content-Type', 'application/json');
-xhr.send(obj);    //送信実行
+fetch(https://script.google.com/macros/s/AKfycbxIOTS0GCvEuhXn6DBo1KJxAVT-8oykQuVtY93n0aYhh1NhB8nA9p04F_dqgYbFmzKZ7A/exec, obj);
