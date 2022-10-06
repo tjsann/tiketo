@@ -66,3 +66,5 @@ body: obj,
 console.log(data);
 });
 });
+//次画面へ
+document.querySelector("[name=PURCHASE_HISTORY_CNF]").click();
