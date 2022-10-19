@@ -2,6 +2,8 @@
 
 //性別選択
 var sex = Math.floor(Math.random()*2+1);　//otoko,onna
+var sexStr;
+
 if(sex = 1) {
   sexStr = "otoko";
 } else {
