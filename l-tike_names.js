@@ -1,7 +1,7 @@
 //ローチケ名義入力画面自動化[共用]
 
 //性別選択
-var sex = Math.floor(Math.random()*2+1);　
+var sex = Math.floor(Math.random()*2)+1;　
 //otoko,onna
 
 //名前リスト
