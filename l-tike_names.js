@@ -97,7 +97,7 @@ document.forms.ttg100.elements.APLCT_ZIP.value = post;
 document.forms.ttg100.elements.APLCT_PREF.value = pref;
 document.forms.ttg100.elements.APLCT_CITY.value = city + town;
 document.forms.ttg100.elements.APLCT_LNUM.value = hn;
-document.getElementsByName("q_1[]").checked = true;
+document.getElementById("q_1-確認同意の上申し込む").checked = true;
 //document.getElementsByName("q_2[]").checked = true;
 
 //次画面へ
