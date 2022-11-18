@@ -12,7 +12,7 @@ var ketasuu = Math.floor(Math.random()*6);
 
 //アドレスに連番を付ける（エイリアス）
 var alias = Math.random().toString(36).slice(-1*(ketasuu+5));
-var address_rand = address_name + "+" + alias + domain;
+var mail = address_name + "+" + alias + domain;
 
 //名前リスト
 var array_sei = ['上田','齋藤','坂田','青田','佐藤','黒木','山田','江藤','遠藤','鈴木','小川','太田','蔵前','栗林','栗原','浅村','杉内','和田','岩隈','涌井','成瀬','金子','内海','三浦','石川','安藤','大竹','吉見','川上','上原'];
@@ -30,7 +30,7 @@ var mei_kana_pic = Math.floor(Math.random()*mei_kana_len);
 
 var sei = array_sei[sei_pic];
 var mei = array_mei[mei_pic];
-var mei_kana = array_mei_kana[mei_kana_pic];
+var mei_kana = array_mei_kana[mei_pic];
 
 //4桁パスワード生成
 var pass = mei_kana + alias;
