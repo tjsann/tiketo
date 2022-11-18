@@ -86,8 +86,8 @@ document.querySelector("#terms_plusid").checked = true;
 document.querySelector("#privacy").checked = true;
 
 //メルマガ
-document.querySelector("#notified").checked = false;
-document.querySelector("#notified_plusid").checked = false;
+document.querySelector("body > div.ui-page.ui-body-c.ui-page-active > div.base-layout.ui-content > form > section:nth-child(9) > div > div > div:nth-child(1) > input[type=checkbox]").checked = false;
+document.querySelector("body > div.ui-page.ui-body-c.ui-page-active > div.base-layout.ui-content > form > section:nth-child(9) > div > div > div:nth-child(2) > input[type=checkbox]").checked = false;
 
 //次ページへ
 document.querySelector("body > div.base-wrapper.clearfix > section > form > nav > ul > li:nth-child(2) > a").click();
