@@ -1,4 +1,4 @@
-//ローチケメアド電話番号自動入力[エイリアス]
+//ライポケ自動入力[エイリアス]
 
 //使用アドレス入力
 var domains = ['@gmail.com'];
@@ -42,17 +42,7 @@ var pass = Math.random().toString(36).slice(-4);
 //生年月日生成
 var birth_y = (Math.floor(Math.random()*15)+1985);
 var birth_m = (Math.floor(Math.random()*12)+1);
-if(birth_m < 10){
-  birth_m = "0" + birth_m;
-}
 var birth_d = (Math.floor(Math.random()*28)+1);
-var day = (Math.floor(Math.random()*28)+1);
-if(birth_d < 10){
-  birth_d = "0" + birth_d;
-}
-if(day < 10){
-  day = "0" + day;
-}
 
 //メアド入力
 document.querySelector("#u_email").value = mail;
@@ -64,10 +54,10 @@ document.querySelector("#password").value = pass;
 document.querySelector("#password_retype").value　 = pass;
 
 //姓入力
-document.querySelector("#familyname") = sei;
+document.querySelector("#familyname").value = sei;
 
 //名入力
-document.querySelector("#firstname") = mei;
+document.querySelector("#firstname").value = mei;
 
 //性別選択
 var sexnum = Math.floor(Math.random()*2);
@@ -89,7 +79,10 @@ document.querySelector("#birth_day").value = birth_d;
 
 //都道府県入力
 var prefnum = Math.floor(Math.random()*48);
-document.querySelector("#pref")　= "0" + prefnum;
+if(10 > prefnum){
+  prefnum = '0'+prefnum;
+  }
+document.querySelector("#pref").value　= prefnum;
 
 //利用規約チェック
 document.querySelector("#terms_lp").checked = true;
