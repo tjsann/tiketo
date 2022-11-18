@@ -90,4 +90,4 @@ document.querySelector("body > div.ui-page.ui-body-c.ui-page-active > div.base-l
 document.querySelector("body > div.ui-page.ui-body-c.ui-page-active > div.base-layout.ui-content > form > section:nth-child(9) > div > div > div:nth-child(2) > input[type=checkbox]").checked = false;
 
 //次ページへ
-document.querySelector("body > div.base-wrapper.clearfix > section > form > nav > ul > li:nth-child(2) > a").click();
+document.querySelector("body > div.ui-page.ui-body-c.ui-page-active > div.base-layout.ui-content > form > nav > ul > li:nth-child(1) > a").click();
