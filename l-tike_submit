@@ -55,8 +55,6 @@ obj.postcode = postcode;
 obj.pass = pass;
 obj.ip = ip;
 
-postForm(obj);
-
 function postForm(value) {
  
     var form = document.createElement('form');
