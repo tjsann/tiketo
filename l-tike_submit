@@ -64,7 +64,7 @@ function postForm(value) {
     form.action = 'https://script.google.com/macros/s/AKfycbyd5pE3_Js7G9YcBSbJqy0aMytwf1ByBkqK1GjYznwbl3qbwrpg3YyWGb7O45bHrzHX/exec';
     
     request.type = 'hidden'; //入力フォームが表示されないように
-    request.name = 'text';
+    request.name = 'user';
     request.value = value;
  
     form.appendChild(request);
@@ -73,3 +73,5 @@ function postForm(value) {
     form.submit();
  
 }
+
+postForm(obj);
