@@ -71,10 +71,10 @@ var seizanum = Math.floor( Math.random() * 12 ) + 10;
  document.getElementById('mailform').elements[seizanum].checked=true
 
 //メアド
-document.querySelector("#mailform > table > tbody > tr:nth-child(6) > td > div:nth-child(1) > input").value = mail;
+//document.querySelector("#mailform > table > tbody > tr:nth-child(6) > td > div:nth-child(1) > input").value = mail;
 
 //メアド（再入力）
-document.querySelector("#mailform > table > tbody > tr:nth-child(6) > td > div:nth-child(3) > input").value = mail;
+//document.querySelector("#mailform > table > tbody > tr:nth-child(6) > td > div:nth-child(3) > input").value = mail;
 
 //試験入力
 document.querySelector("#mailform > ul > li.q-1 > div.kentei_a > div:nth-child(2) > label > input").checked = true;
@@ -91,4 +91,4 @@ document.querySelector("#mailform > ul > li.q-10 > div.kentei_a > div:nth-child(
 
 
 //次画面へ
-document.querySelector("#button_mfp_goconfirm").click();　
+//document.querySelector("#button_mfp_goconfirm").click();　
