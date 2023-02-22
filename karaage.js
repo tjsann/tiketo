@@ -61,7 +61,7 @@ document.querySelector("#mailform > table > tbody > tr:nth-child(3) > td > selec
 
 
 //男女選択
-if(sex == 1) {
+if(sex == 0) {
   document.getElementById('mailform').elements[8].checked=true
 } else {
   document.getElementById('mailform').elements[9].checked=true
