@@ -113,8 +113,8 @@ sessionStorage.setItem("mei", mei);
 //生年月日セッション格納
 sessionStorage.setItem("birth", birth_y　 + "/" + birth_m + "/" + birth_d);
 
-//名セッション格納
-sessionStorage.setItem("mei", mei);
+//都道府県セッション格納
+//sessionStorage.setItem("mei", mei);
 
 //利用規約チェック
 document.querySelector("#terms_lp").checked = true;
