@@ -4,7 +4,7 @@
 var domains = ['@gmail.com'];
 
 //使用アドレス一覧
-var address_names = ['sagakanata122','shibakatsuya2232','enanan.no1'];
+var address_names = ['seikaa0525','xiguguitailangxigu','tianchuandunshengtianchuan'];
 
 var domain = domains[Math.floor(Math.random()*domains.length)];
 var address_name =  address_names[Math.floor(Math.random()*address_names.length)];
@@ -99,10 +99,9 @@ sessionStorage.setItem("ip", ip);
 sessionStorage.setItem("mail", mail);
 //パスセッション格納
 sessionStorage.setItem("pass", pass);
-//姓セッション格納
-sessionStorage.setItem("sei", sei);
-//名セッション格納
-sessionStorage.setItem("mei", mei);
+//名前セッション格納
+sessionStorage.setItem("name", sei + mei);
+
 //性別セッション格納
   if (sexnum == 0) {
     sessionStorage.setItem("sex", "男");
