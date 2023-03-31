@@ -4,7 +4,7 @@
 var domains = ['@gmail.com'];
 
 //使用アドレス一覧
-var address_names = ['seikaa0525','xiguguitailangxigu','tianchuandunshengtianchuan'];
+var address_names = ['tingtianminghongt','xiguguitailangxigu','tianchuandunshengtianchuan'];
 
 var domain = domains[Math.floor(Math.random()*domains.length)];
 var address_name =  address_names[Math.floor(Math.random()*address_names.length)];
