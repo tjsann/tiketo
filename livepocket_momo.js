@@ -95,6 +95,8 @@ document.querySelector("#pref").value　= prefnum;
   
 //IPセッション格納
 sessionStorage.setItem("ip", ip);
+//メアドセッション格納
+sessionStorage.setItem("mail", mail);
 //パスセッション格納
 sessionStorage.setItem("pass", pass);
 //姓セッション格納
