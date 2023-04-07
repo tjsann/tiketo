@@ -64,7 +64,7 @@ if(10 > birth_d) {
 var day = (Math.floor(Math.random()*28)+1);
 
 //6桁パスワード生成
-var pass = pass = sei_r + mei_r + mail_num;
+var pass = pass = mei_r + birth_m + birth_d;
 //パスワードは名前(アルファベット＋月＋日)
 
 //住所リスト(東京都)
