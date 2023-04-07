@@ -142,8 +142,5 @@ var hn = (Math.floor(Math.random()*4)+1)+ "ー" + (Math.floor(Math.random()*500)
   //電話番号入力
   document.querySelector("#member_telHome").value = tell1 + tell2 + tell3;
 
-console.log(birth_m);
-console.log(birth_d);
-
   //次ページへ
 document.querySelector("#member_ConfirmAction").click();
