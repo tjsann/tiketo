@@ -124,7 +124,9 @@ var hn = (Math.floor(Math.random()*4)+1)+ "ー" + (Math.floor(Math.random()*500)
   document.querySelector("#member_post2").value = postcode2[postcodeRM];
   
   //住所検索
-  document.querySelector("#member_AddressSearchAction").click();
+  //document.querySelector("#member_AddressSearchAction").click();
+  document.querySelector("#member_address1").value = "東京都"
+  document.querySelector("#member_address2").value = city + town
   
   //住所入力2
   document.querySelector("#member_address3").value = zenkaku2Hankaku(town) + zenkaku2Hankaku(hn);
