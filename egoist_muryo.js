@@ -1,10 +1,10 @@
 var form = document.createElement('form');
 document.body.appendChild(form);
 form.method = 'post';
-form.action = 'https://l-tike.com/st1/3mikseocy9stpu5smbxf';
+form.action = 'https://l-tike.com/st1/tdaohzq6pfkt859w4rep';
 var input = document.createElement('input');
 input.type = 'hidden';
 input.name = 'CERK';
-input.value = '19e6a10c1f51659fd9cddff6cda00ff2';
+input.value = '15751d9878c7f3ab5ef0b9221a0f8498';
 form.appendChild(input);
 form.submit();
