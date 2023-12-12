@@ -1,10 +1,10 @@
 //カラアゲニスト
 
 //使用アドレス入力
-var domains = ['@gmail.com'];
+var domains = ['@gamuil.com'];
 
 //使用アドレス名
-var address_names = ['run848520'];
+var address_names = ['karaagesuki'];
 
 var domain = domains[Math.floor(Math.random()*domains.length)];
 var address_name =  address_names[Math.floor(Math.random()*address_names.length)];
