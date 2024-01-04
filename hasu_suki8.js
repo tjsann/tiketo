@@ -1,7 +1,7 @@
-var mail = "yuknaka1012.gohan@icloud.com";
-var sei = "中山"
-var mei = "湧貴"
-var tell = "09096491852"
+var mail = "user1nogami@gmail.com";
+var sei = "野上"
+var mei = "憲伸"
+var tell = "08078343138"
 
 document.querySelector("#competition-application-form > fieldset:nth-child(2) > div > div > input").value=  mail;
 document.querySelector("#competition-application-form > fieldset:nth-child(3) > div > div:nth-child(1) > input").value= sei;
