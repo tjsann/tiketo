@@ -1,7 +1,7 @@
-var mail = "gatsby.clockwork2001@gmail.com";
-var sei = "神村"
-var mei = "泰人"
-var tell = "08056261311"
+var mail = "mitsui0315@gmail.com";
+var sei = "三井"
+var mei = "望"
+var tell = "09046979403"
 
 document.querySelector("#competition-application-form > fieldset:nth-child(2) > div > div > input").value=  mail;
 document.querySelector("#competition-application-form > fieldset:nth-child(3) > div > div:nth-child(1) > input").value= sei;
