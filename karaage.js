@@ -4,13 +4,13 @@
 var domains = ['@gamuil.com'];
 
 //使用アドレス名
-var address_names = ['karaagesuki'];
+var address_names = ['karaagesuki','kaagege','3rdms'];
 
 var domain = domains[Math.floor(Math.random()*domains.length)];
 var address_name =  address_names[Math.floor(Math.random()*address_names.length)];
 
 var ketasuu = Math.floor(Math.random()*6);
-var address_rand = address_name + domain;
+var address_rand = address_name + Math.random().toString(36).slice(-1*(ketasuu+5)) + domain;
 
 //メアド形式選択(1:1)
 var mailtype = Math.floor(Math.random()*Math.floor(2));
