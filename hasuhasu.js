@@ -1,6 +1,6 @@
-var mail = "yuknaka1012.gohan@icloud.com";
-var sei = "中山"
-var mei = "湧貴"
+var mail = "akatoki1016@icloud.com";
+var sei = "藤原"
+var mei = "寿雅"
 var tell = "09096491852"
 
 document.querySelector("#competition-application-form > fieldset:nth-child(2) > div > div > input").value=  mail;
