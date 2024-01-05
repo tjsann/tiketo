@@ -1,7 +1,7 @@
 //カラアゲニスト
 
 //使用アドレス入力
-var domains = ['@gamuil.com'];
+var domains = ['@gamuil.com','@lcioub.com','@aguemo.com'];
 
 //使用アドレス名
 var address_names = ['karaagesuki','kaagege','3rdms'];
