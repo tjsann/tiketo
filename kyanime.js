@@ -2,8 +2,10 @@
 
 //スリープ関数
 const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));//timeはミリ秒
-kiyakuClick();
-kyanimeCreate();
+window.addEventListener('load', function(){
+  kiyakuClick();
+  kyanimeCreate();
+})
 
 
 async function kiyakuClick(){
