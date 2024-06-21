@@ -15,7 +15,7 @@ async function kiyakuClick(){
 }
 function kyanimeCreate(){
 //メールアドレス取得
-const email = document.querySelector("#content > div > div.css-1rqoaw8 > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(3) > p.css-4w4wr0").textContent;
+var email = document.querySelector("#content > div > div.css-1rqoaw8 > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(3) > p.css-4w4wr0").textContent;
  //性別選択
 var sex = Math.floor(Math.random()*2 + 1) ;
 //otoko,onna
@@ -39,7 +39,7 @@ var mei_len = array_mei.length;
 var sei_pic = Math.floor(Math.random()*sei_len);
 var mei_pic = Math.floor(Math.random()*mei_len);
 
-const sei = array_sei[sei_pic];
+var sei = array_sei[sei_pic];
 var mei = array_mei[mei_pic];
 var sei_kana = array_sei_kana[sei_pic];
 var mei_kana = array_mei_kana[mei_pic];
@@ -78,7 +78,7 @@ var tell = "0" + (Math.floor(Math.random()*3)+7) + "0" + (Math.floor(Math.random
 //パスワード作成※メールアドレス+1234
 email.split('@');
 email.split('@')[0];
-const pass = email + 1234
+var pass = email + 1234
 //セッション格納
 sessionStorage.setItem('name', sei + mei);
 sessionStorage.setItem('name_kana', sei_kana + mei_kana);
