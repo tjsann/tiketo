@@ -2,10 +2,21 @@
 
 //スリープ関数
 const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time));//timeはミリ秒
-window.addEventListener('load', function(){
   kiyakuClick();
   kyanimeCreate();
-})
+
+function changeValue(target,text){
+  let lastValue = target.value;
+  target.value = text;
+  
+  let ev = new Event ("input", { bubbles: true });
+  // 3
+  let tracker = target._valueTracker;
+  if (tracker) {
+    tracker.setValue(lastValue);
+  }
+  target.dispatchEvent(ev);  
+}
 
 
 async function kiyakuClick(){
@@ -15,7 +26,8 @@ async function kiyakuClick(){
   document.querySelector("#content > div > div > div.css-1nyfxon > button.css-1muxb32").click();
   await sleep(2000);//1秒待ち
 }
-function kyanimeCreate(){
+async function kyanimeCreate(){
+await sleep(1000);//1秒待ち
 //メールアドレス取得
 var email = document.querySelector("#content > div > div.css-1rqoaw8 > div:nth-child(3) > div > div:nth-child(2) > div > div:nth-child(3) > p.css-4w4wr0").textContent;
  //性別選択
@@ -93,11 +105,21 @@ if(sex == 1) {
   sessionStorage.setItem('sex', "女");
 }
 //入力欄
-//入力欄
 //姓
-document.querySelector("#family-name-input").value=sei;
-console.log(sei);
-//名
+var element = document.querySelector("#family-name-input");
+let lastValue = element.value;
+element.value = "JavaScriptでinput.valueを更新してdispatchEvent（_valueTracker利用）";
+
+let ev = new Event ("input", { bubbles: true });
+// 3
+let tracker = element._valueTracker;
+if (tracker) {
+    tracker.setValue(lastValue);
+}
+// 4
+element.dispatchEvent(ev);  
+
+  //名
 document.querySelector("#first-name-input").value=mei;
 console.log(mei);
 //姓(フリガナ)
