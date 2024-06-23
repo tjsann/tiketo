@@ -1,7 +1,7 @@
 var form = document.createElement('form');
 document.body.appendChild(form);
 form.method = 'post';
-form.action = 'https://ticket.ponycanyon.co.jp/FV4MjbxJ79K6Ydm-p';
+form.action = 'https://ticket.ponycanyon.co.jp/pc/FV4MjbxJ79K6Ydm-p';
 
 var input1 = document.createElement('input');
 input1.type = 'hidden';
