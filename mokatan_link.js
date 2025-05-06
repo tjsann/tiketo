@@ -11,7 +11,7 @@ form.appendChild(input1);
 
 var input2 = document.createElement('input');
 input2.type = 'hidden';
-input2.name = 'tk';
+input2.name = 't';
 input2.id = 'st-timestamp-5280';
 input2.value = 1746542690
 form.appendChild(input2);
